@@ -1,4 +1,4 @@
-- hosts localhost
+- hosts: localhost
   become: yes
   pre_tasks:
     - name: Update repositories
