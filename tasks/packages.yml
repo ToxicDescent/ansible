@@ -1,0 +1,8 @@
+- name: Install utility packages common to all hosts
+  apt:
+    name:
+      - htop
+      - vim
+      - tmux
+    state: present
+    autoclean: yes
