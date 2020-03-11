@@ -10,3 +10,11 @@
     owner: root
     group: root
     mode: 0440
+
+- name: Replace pi user
+  user:
+    - username: patrick
+      name: Patrick
+      groups: ['wheel', 'sudo']
+      uid: 1000
+      gid: 1000
