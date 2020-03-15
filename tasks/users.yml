@@ -10,3 +10,14 @@
     owner: root
     group: root
     mode: 0440
+
+- name: Create user
+  user:
+    name: patrick
+    password: '$6$iomIEMMg$1zuY/FP7X4PfgTJctQqlINHy0klzasrapELEYOifu3DZQfoDBgeeNqLBGHthJyQt/JUtiBJiwan.eVghBf3kc0'
+    groups: sudo
+    state: present
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/patrick
